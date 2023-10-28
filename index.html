@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieBox</title>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body class="dark:bg-gray-900 w-[100vw] bg-gray-50 duration-300 overflow-x-hidden">
+    <header class="bg-white border-b">
+        <div class="p-3 flex flex-col justify-center lg:flex-row lg:justify-between items-center">
+            <div>
+                <a href="./index.html" class="font-semibold text-xl "><span class="font-bold">Movie</span><span class="bg-red-600 p-1 text-white ml-1 shadow rounded-md">Box</span></a>
+            </div>
+            <div class="mt-4 lg:mt-0">
+                <form action="">
+                    <input type="search" name="" id="search" class="border p-2 rounded-md outline-none" placeholder="Rechercher un film">
+                    <button type="submit" class="bg-red-600 text-white p-2 rounded-md font-semibold hover:bg-red-500 hover:duration-300 shadow-md">search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section id="film-box" class="p-6 grid gap-4 place-content-center grid-cols-2 md:grid-cols-3 lg:grid-cols-4 overflow-x-hidden">
+        <button class="bg-red-600 shadow-md rounded-lg border w-44 object-contain overflow-hidden">
+            <img src="./img/anniversaired-67.jpg" class="w-44 " alt="">
+            <div class="flex justify-between items-center p-2 text-white">
+                <p class="font-semibold">Titre du film</p>
+                <p class="bg-red-200 text-red-600 font-semibold px-2 shadow-md">8.9</p>
+            </div>
+        </button>
+      
+    </section>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
